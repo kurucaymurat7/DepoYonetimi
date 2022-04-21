@@ -2,12 +2,28 @@ package depopackage;
 
 public class Urun {
 
-    private int id;
-    private String urunIsmi;
-    private String uretici;
-    private int miktar;
-    private String birim;
-    private String raf;
+    private int id = -1 ;
+    private String urunIsmi = "Deger girilmedi";
+    private String uretici = "Deger girilmedi";
+    private int miktar = 0;
+    private String birim = "cuval";
+    private String raf= "Deger girilmedi";
+
+
+    public Urun(int urunID, String urunIsmi, String ureticiFirma) {
+        this.id = urunID;
+        this.urunIsmi = urunIsmi;
+        this.uretici = ureticiFirma;
+    }
+
+    public Urun(Integer each, String urunIsmi, String uretici, int miktar, String birim, String raf) {
+        this.id = each;
+        this.urunIsmi = urunIsmi;
+        this.uretici = uretici;
+        this.miktar = miktar;
+        this.birim = birim;
+        this.raf = raf;
+    }
 
     @Override
     public String toString() {
@@ -24,21 +40,11 @@ public class Urun {
     public Urun() {
     }
 
-    public Urun(int id, String urunIsmi, String uretici, int miktar, String birim, String raf) {
-        this.id = id;
-        this.urunIsmi = urunIsmi;
-        this.uretici = uretici;
-        this.miktar = miktar;
-        this.birim = birim;
-        this.raf = raf;
-    }
-
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId() {
     }
 
     public String getUrunIsmi() {
@@ -61,8 +67,8 @@ public class Urun {
         return miktar;
     }
 
-    public void setMiktar(int miktar) {
-        this.miktar = miktar;
+    public int setMiktar(int miktar) {
+        return this.miktar += miktar;
     }
 
     public String getBirim() {
