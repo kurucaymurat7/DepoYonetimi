@@ -9,7 +9,6 @@ public class Urun {
     private String birim = "cuval";
     private String raf= "Deger girilmedi";
 
-
     public Urun(int urunID, String urunIsmi, String ureticiFirma) {
         this.id = urunID;
         this.urunIsmi = urunIsmi;
