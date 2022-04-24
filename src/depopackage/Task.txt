@@ -16,6 +16,7 @@
 	 *
 	 *		urunCikisi 		==> listeden urunu sececegiz ve urunun cikis yapcagiz. burada urun listesinden sadece miktarda degisiklik yapilacak.
 	 *							urun adedi 0dan az olamaz. 0 olunca urun tanimlamasi silinmesin. sadece miktari 0 olsun.
+
 	 * 		===> yaptigimiz tum degisiklikler listede de gorunsun.
 	 *
 	 *
